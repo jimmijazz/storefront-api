@@ -1,0 +1,19 @@
+{
+  "name": "graphql-shopify-example",
+  "version": "1.0.0",
+  "description": "GraphQL Built for Shopify example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua D Bitossi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "node-fetch": "^2.4.1",
+    "path": "^0.12.7",
+    "shopify-buy": "^2.2.2"
+  }
+}

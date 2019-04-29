@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= step %></title>
+    <link rel="stylesheet" href="../skeleton.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <script type="text/javascript" src="../jquery.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="row">
+        <div class="one column"></div>
+        <div class="eleven columns"><h3><%= step %></h3></div>
+      </div>
+      <!-- Products -->
+      <div class="row">
+        <% Object.keys(products).forEach(function(prop) { %>
+          <div class="one-third column product">
+            <h4><%- products[prop]["title"] %></h4>
+            <h5><%- products[prop]["description"] %></h5>
+            <!-- <input type -->
+            <button data-product="<%- products[prop]["id"] %>" class="button-primary">Select</button>
+
+          </div>
+        <% }); %>
+      </div>
+      <!-- Navigation -->
+      <div class="row">
+        <!-- <div class="one column">&nbsp</div> -->
+        <div class="two columns"><button class="button-secondary">Previous</button></div>
+        <div class="eight columns">&nbsp</div>
+        <div class="two columns"><button class="button-secondary">Next</button></div>
+        <!-- <div class="one column">&nbsp</div> -->
+      </div>
+
+
+      </div>
+      <!-- Cart -->
+      <div class="row">
+
+      </div>
+  </div>
+  <script type="text/javascript" src="../scripts.js"></script>
+  </body>
+</html>
